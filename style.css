@@ -1,0 +1,80 @@
+ul.navigation {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+.buttonrow {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  background-color: cornflowerblue;
+}
+
+.topr {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.itemh1 { grid-area: header;}
+.itemh2 { grid-area: event1;}
+.itemh3 { grid-area: event2;}
+.itemh4 { grid-area: event3;}
+.itemh5 { grid-area: event4;}
+.itemh6 { grid-area: right;}
+.itema1 { grid-area: header;}
+.itema2 { grid-area: gegevens;}
+.itema3 { grid-area: buttons;}
+.iteml1 { grid-area: filter;}
+.iteml2 { grid-area: lesblok;}
+.itemc2 { grid-area: competenties;}
+
+.grid-containerh {
+  display: grid;
+  grid-template:
+    'header header header'
+    'event1 event2 right'
+    'event3 event4 right';
+  grid-gap: 10px;
+  padding: 50px;
+}
+
+.grid-containera {
+  display: grid;
+  grid-template:
+    'header'
+    'gegevens'
+    'buttons';
+  grid-gap: 10px;
+  padding: 50px;
+}
+
+.grid-containerl {
+  display: grid;
+  grid-template:
+    'filter'
+    'lesblok';
+  grid-gap: 10px;
+  padding: 50px;
+}
+
+.grid-containercl {
+  display: grid;
+  grid-template:
+    'header'
+    'competenties';
+  grid-gap: 10px;
+  padding: 50px;
+}
+
+.grid-container>div {
+  background-color: lightsteelblue;
+  text-align: left;
+  padding: 20px 5;
+  font-size: 20px;
+}
